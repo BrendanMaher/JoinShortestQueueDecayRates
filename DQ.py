@@ -1,5 +1,5 @@
 class DQ:
- # Initialize Double Queue with joining & serving probabilities, methods find decay rates of large queue probabilities
+ #initialize Double Queue with joining & serving probabilities, methods find decay rates of large queue probabilities
  def __init__(self,np=0.1,nn=0.1,no=0.2,up=0.3,un=0.3):
    if (np+nn+no+up+un!=1)|(np<=0)|(nn<=0)|(no<=0)|(up<=0)|(un<=0)|(np>=up)|(nn>=un)|(up+un<=0.5): print("bad input")
    else: self.__Np,self.__Nn,self.__No,self.__Up,self.__Un=np,nn,no,up,un
